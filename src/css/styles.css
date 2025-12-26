@@ -9,6 +9,8 @@
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
 }
+html{scroll-behavior: smooth;}
+
 body {
     margin: 0;
     padding: 0;
@@ -16,8 +18,15 @@ body {
     color: #FFFFFF;
 }
 
-a {
-    color: inherit;
+a {color: inherit;}
+
+:root{
+    --border: rgba(255, 255, 255, 0.1);
+    --text: #FFFFFF;
+    --muted: #AAAAAA;
+    --brand: #1E90FF;
+    --shadow: #020617;
+    --radius: 16px
 }
 
 /* Ayuda visual para las secciones */
@@ -26,11 +35,39 @@ a {
 }
 
 /* ==== NAVBAR ==== */
+.container{
+    width: min(1100px, 100% - 32px);
+    margin-inline: auto;
+}
+
+.skip-link{
+    position: absolute;
+    top: 8px;
+    left: -999px;
+    background: #1E90FF;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+}
+
+.skip-link:focus{
+    left: 16px;
+    z-index: 9999;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
 .site-header{
     position: sticky;
     top: 0;
-    width: 100%;
-    background-color: #020617;
+    background: rgba(2,6,23,0.80);
+    backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid #333;
 }
