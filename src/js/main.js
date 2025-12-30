@@ -1,19 +1,27 @@
 const navToggle = document.querySelector("#navToggle");
 const mobilePanel = document.querySelector("#mobilePanel");
+const navOverlay = document.querySelector("#navOverlay");
 
-function closeMenu(){
+function closeMenu() {
     navToggle.setAttribute("aria-expanded", "false");
     mobilePanel.hidden = true;
+    navOverlay.classList.remove("is-visible");
+    document.body.style.overflow = "";
 }
-function openMenu(){
+
+function openMenu() {
     navToggle.setAttribute("aria-expanded", "true");
     mobilePanel.hidden = false;
+    navOverlay.classList.add("is-visible");
+    document.body.style.overflow = "hidden";
 }
 
 navToggle.addEventListener("click", () => {
     const expanded = navToggle.getAttribute("aria-expanded") === "true";
     expanded ? closeMenu() : openMenu();
 });
+
+navOverlay.addEventListener("click", closeMenu);
 
 document.querySelectorAll(".panel-link, .panel-cta").forEach((a) => {
     a.addEventListener("click", closeMenu);
