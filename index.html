@@ -112,12 +112,15 @@
         <small>&copy; 2025 Arturo Cantú. Todos los derechos reservados </small>
     </footer>
 <!--Banner de cookies-->
-<div class="cookie-banner">
-    <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra Política de Privacidad</a>
-    <a href="#privacidad">Más información</a>
-    </p>
-    <button class="cookie-accept__btn">Aceptar</button>
-</div>
+    <div class="cookie-banner" id="cookieBanner">
+        <p>Utilizamos cookies para mejorar tu experiencia.
+            <a href="privacidad.html">Más información</a>
+        </p>
+        <div class="cookie-actions">
+            <button id="cookieReject" class="cookie-btn cookie-btn--reject">Rechazar</button>
+            <button id="cookieAccept" class="cookie-btn cookie-btn--accept">Aceptar</button>
+        </div>
+    </div>
     <script src="src/js/main.js"></script>
     </body>
 
