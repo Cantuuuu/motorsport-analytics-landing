@@ -9,29 +9,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta name="description" content="Portafolio web de Ciencia y Analítica de Datos enfocado en motorsport.">
     <link rel="stylesheet" href="src/css/styles.css">
+
+
 </head>
-
     <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
     <!-- Aquí va navbar, footer y banner de cookies -->
-    <header class="site-header">
-        <nav class="navbar">
-            <a href="#inicio" class="nav__logo">
+    <header class="site-header" id="top">
+        <nav class="navbar container" aria-label="Navegación principal">
+            <a href="#inicio" class="nav__logo" aria-label="Ir a Inicio">
                 <img src="src/img/logo.svg" alt="Logo de la página web" >
-                <span> Arturo Cantú</span>
+                <span> Cantú<span class="brand-dot">.dev </span></span>
             </a>
-            <ul class="nav__menu">
-                <li><a href="#inicio" class="nav__link">Inicio</a></li>
-                <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
-                <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
-                <li><a href="#contacto" class="nav__link">Contacto</a></li>
-            </ul>
-        </nav>
+            <div class="nav__actions">
+                <ul class="nav__menu">
+                    <li><a href="#inicio" class="nav__link">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+                    <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+                <a href="#contacto" class="nav__cta">
+                    <span class="icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                            <path d="M21 8l-9 6L3 8" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+                            <path d="M21 8v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Hablemos
+                </a>
+                <button class="nav__toggle" id="navToggle"
+                aria-expanded="false" aria-controls="mobilePanel"
+                aria-label="Abrir menú">
+                    <span class="sr-only" > Abrir menú</span>
+                    <span class="burger" aria-hidden="true"> </span>
+                </button>
+            </div>
 
-        <a href="#contacto" class="nav__cta">Contáctame</a>
+            <div class="nav__panel" id="mobilePanel" hidden>
+                <ul class="nav__panelList">
+                    <li><a href="#inicio" class="panel__link">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="panel__link">Sobre mí</a></li>
+                    <li><a href="#proyectos" class="panel__link">Proyectos</a></li>
+                    <li><a href="#contacto" class="panel__link">Contacto</a></li>
+                    <li class="panel-divider"></li>
+                    <li><a href="#contacto"> Hablemos</a> </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <!-- Aquí va el contenido principal de la página -->
-    <main>
+    <main id="contenido">
         <!-- Hero/ banner para el contenid central -->
         <section id="inicio" class="hero">
         <h1>Hola, soy Arturo Cantú</h1>
@@ -85,11 +113,12 @@
     </footer>
 <!--Banner de cookies-->
 <div class="cookie-banner">
-    <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra <a href="privacidad.html">Política de Privacidad</a>
+    <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra Política de Privacidad</a>
     <a href="#privacidad">Más información</a>
     </p>
     <button class="cookie-accept__btn">Aceptar</button>
 </div>
+    <script src="src/js/main.js"></script>
     </body>
 
 </html>
