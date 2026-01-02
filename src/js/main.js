@@ -52,3 +52,20 @@ cookieReject.addEventListener("click", () => {
     localStorage.setItem(COOKIE_KEY, "rejected");
     hideCookies();
 });
+
+// Smooth scroll para que los enlaces internos se desplacen suavemente, en lugar de saltar directamente
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
