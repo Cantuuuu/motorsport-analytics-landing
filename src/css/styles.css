@@ -84,8 +84,8 @@ a {color: inherit;}
     position: relative;
 }
 
-.navb__logo {
-    display: inline-block;
+.nav__logo {
+    display: inline-flex;
     align-items: center;
     text-decoration: none;
     gap: 10px;
@@ -98,6 +98,12 @@ a {color: inherit;}
     border-radius: 999px;
     object-fit: cover;
     border: 1px solid var(--border);
+    display: block;
+}
+.nav__logo span {
+    line-height: 1;
+    display: inline-block;
+    margin: 0;
 }
 
 .brand-dot{
