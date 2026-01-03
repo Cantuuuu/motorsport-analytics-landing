@@ -6,6 +6,7 @@ Imagen del sitio:
 ![Captura del sitio](src/img/hero.png)
 ## Despliegue
 El sitio está desplegado en GitHub Pages y se puede ver en:
+
 `https://cantuuuu.github.io/motorsport-analytics-landing/`
 
 ## Características
