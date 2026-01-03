@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arturo Cantú Data | Portafolio Web</title>
+    <link rel="icon" href="src/img/icons8-ciencia-de-datos.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -18,13 +19,13 @@
     <header class="site-header" id="top">
         <nav class="navbar container" aria-label="Navegación principal">
             <a href="#inicio" class="nav__logo" aria-label="Ir a Inicio">
-                <img src="src/img/logo.svg" alt="Logo de la página web" >
-                <span> Cantú<span class="brand-dot">.dev </span></span>
+                <img src="src/img/icons8-ciencia-de-datos.svg" alt="Logo de la página web" >
+                <span>Cantú<span class="brand-dot">.dev</span></span>
             </a>
             <div class="nav__actions">
                 <ul class="nav__menu">
                     <li><a href="#inicio" class="nav__link">Inicio</a></li>
-                    <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+                    <li><a href="#solucion" class="nav__link">Sobre mí</a></li>
                     <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
                     <li><a href="#contacto" class="nav__link">Contacto</a></li>
                 </ul>
@@ -49,7 +50,7 @@
             <div class="nav__panel" id="mobilePanel" hidden>
                 <ul class="nav__panelList">
                     <li><a href="#inicio" class="panel-link">Inicio</a></li>
-                    <li><a href="#sobre-mi" class="panel-link">Sobre mí</a></li>
+                    <li><a href="#solucion" class="panel-link">Sobre mí</a></li>
                     <li><a href="#proyectos" class="panel-link">Proyectos</a></li>
                     <li><a href="#contacto" class="panel-link">Contacto</a></li>
                     <li class="panel-divider"></li>
@@ -63,54 +64,354 @@
     <main id="contenido">
         <!-- Hero/ banner para el contenid central -->
         <section id="inicio" class="hero">
-        <h1>Hola, soy Arturo Cantú</h1>
-        <p>Apasionado por la Ciencia de Datos y el Motorsport</p>
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <span class="hero__badge">🏎️ Data Science + Motorsport</span>
+                    <h1 class="hero__title">Transformo datos en <span class="text-gradient">ventaja competitiva</span></h1>
+                    <p class="hero__description">
+                        Analista de datos con interes en el motorsport. Combino mi pasión por la F1 y los deportes de motor con técnicas avanzadas de ciencia de datos para generar insights que marcan la diferencia.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#contacto" class="btn btn--primary">
+                            <span>Trabajemos juntos</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#proyectos" class="btn btn--secondary">Ver proyectos</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__image-wrapper">
+                        <img src="src/img/myPhoto.jpg" alt="Arturo Cantú - Data Scientist" class="hero__photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== SECCIÓN DE PROBLEMAS ============  -->
+        <section id="problemas" class="section problems">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">El Desafío</span>
+                    <h2 class="section__title">Problemas comunes en el análisis de datos del Motorsport</h2>
+                    <p class="section__subtitle">El mundo de las carreras genera terabytes de datos por evento, pero convertirlos en decisiones estratégicas es el verdadero reto.</p>
+                </div>
+                <div class="problems__grid">
+                    <article class="problem-card">
+                        <div class="problem-card__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3>Datos en tiempo real sin procesar</h3>
+                        <p>Los equipos generan más de 300 GB de telemetría por carrera, pero menos del 20% se analiza efectivamente durante el evento.</p>
+                    </article>
+                    <article class="problem-card">
+                        <div class="problem-card__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Silos de información</h3>
+                        <p>Datos de aerodinámica, motor, neumáticos y estrategia viven en sistemas separados, dificultando una visión integral del rendimiento.</p>
+                    </article>
+                    <article class="problem-card">
+                        <div class="problem-card__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Insights ocultos</h3>
+                        <p>Patrones de degradación de neumáticos, correlaciones de setup y tendencias de rivales quedan sin descubrir por falta de análisis profundo.</p>
+                    </article>
+                    <article class="problem-card">
+                        <div class="problem-card__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M3 9h18"/>
+                                <path d="M9 21V9"/>
+                            </svg>
+                        </div>
+                        <h3>Visualizaciones poco efectivas</h3>
+                        <p>Dashboards genéricos que no comunican la historia detrás de los datos ni facilitan la toma de decisiones rápida.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== SECCIÓN DE SOLUCIONES ========== -->
+        <section id="solucion" class="section solution">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">La Solución</span>
+                    <h2 class="section__title">Análisis de datos que impulsa resultados</h2>
+                    <p class="section__subtitle">Combino experiencia técnica con pasión por el motorsport para transformar datos crudos en estrategias.</p>
+                </div>
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <span class="kpi-card__value">+10</span>
+                        <span class="kpi-card__label">Proyectos de análisis</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-card__value">2+</span>
+                        <span class="kpi-card__label">Años de experiencia</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-card__value">100%</span>
+                        <span class="kpi-card__label">Pasión por la F1</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-card__value">24/7</span>
+                        <span class="kpi-card__label">Aprendiendo</span>
+                    </div>
+                </div>
+                <div class="benefits">
+                    <div class="benefit">
+                        <div class="benefit__icon">✓</div>
+                        <div>
+                            <h4>Análisis de telemetría</h4>
+                            <p>Procesamiento de datos de sensores para optimizar rendimiento.</p>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit__icon">✓</div>
+                        <div>
+                            <h4>Visualización interactiva</h4>
+                            <p>Dashboards personalizados que cuentan historias con datos.</p>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit__icon">✓</div>
+                        <div>
+                            <h4>Machine Learning</h4>
+                            <p>Modelos predictivos para estrategia de carrera y setup.</p>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit__icon">✓</div>
+                        <div>
+                            <h4>Reportes automatizados</h4>
+                            <p>Informes que se generan automáticamente post-sesión.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= SECCIÓN DE PROYECTOS ============  -->
+        <section id="proyectos" class="section projects">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Portafolio</span>
+                    <h2 class="section__title">Proyectos destacados</h2>
+                    <p class="section__subtitle">Estos son algunos trabajos, proyectos y hackathones en los que he colaborado.</p>
+                </div>
+                <div class="projects__grid">
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="src/img/enerhack2025.jpg" alt="Imagen del proyecto: Electrificación del transporte" class="project-card__image-img" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__tag">Python · Data · APIs</span>
+                            <h3>QroNova - 2.º lugar en EnerHack 2025.</h3>
+                            <p>Electrificación del transporte público en Querétaro mediante buses eléctricos con supercapacitores, respaldada por modelos de datos, simulaciones energéticas y análisis financiero.</p>
+                            <a href="https://qronova.crucerlabs.com" class="project-card__link">
+                                Ver proyecto
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="src/img/imgProyectoGlorieta.png" alt="Imagen del proyecto: Análisis en rotonda" class="project-card__image-img" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__tag">Python · OpenCV · YOLO (Ultralytics) · ByteTrack</span>
+                            <h3>Contador de vehículos en rotonda con visión por computadora.</h3>
+                            <p>Detecta y rastrea autos en video (YOLO + ByteTrack), mide entradas/salidas por zonas configurables y exporta métricas y eventos a CSV, para su análisis en R. </p>
+                            <a href="https://uaq088-my.sharepoint.com/:v:/g/personal/acantu14_lms_uaq_mx/IQAhGbZ3aiUOTIB2HnC2Qw9xAU0ngZtqa8tdvTIB7QgwYek?e=X7MmB7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" class="project-card__link">
+                                Ver proyecto
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="src/img/imgCUTTUC.png" alt="Imagen del proyecto: Prototipo de conteo de pasajeros" class="project-card__image-img" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__tag">Python · OpenCV</span>
+                            <h3>CUT / TUC - 2.º lugar en Hackaton Troyano 2024.</h3>
+                            <p>Procesamiento de imágenes en tiempo real para analizar la afluencia de pasajeros en transporte público y escolar, desarrollado en Python sin frameworks de alto nivel.</p>
+                            <a href="https://youtu.be/v9eO2skQBjE?si=7frbJ3rpbbRYSEor" class="project-card__link">
+                                Ver proyecto
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== SECCIÓN DE PREGUNTAS FRECUENTES ====== -->
+        <section id="faq" class="section faq">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">FAQ</span>
+                    <h2 class="section__title">Preguntas frecuentes</h2>
+                    <p class="section__subtitle">Respuestas a las dudas más comunes sobre mis servicios.</p>
+                </div>
+                <div class="faq__list">
+                    <details class="faq-item">
+                        <summary class="faq-item__question">
+                            <span>¿Qué herramientas utilizas para el análisis de datos?</span>
+                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </summary>
+                        <div class="faq-item__answer">
+                            <p>Trabajo principalmente con Python (Pandas, NumPy, Scikit-learn), SQL para bases de datos, y herramientas de visualización como Tableau, Power BI y bibliotecas como Matplotlib y Plotly. Para datos de F1, utilizo FastF1 y la API oficial de Ergast.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__question">
+                            <span>¿Trabajas solo con datos de Fórmula 1?</span>
+                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </summary>
+                        <div class="faq-item__answer">
+                            <p>No, aunque la F1 es mi pasión principal, también trabajo con datos de otras categorías como MotoGP, WEC, IndyCar y competiciones de karting. Además, aplico mis habilidades de data science a otros sectores como finanzas, marketing y operaciones.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__question">
+                            <span>¿Cuál es tu proceso de trabajo en un proyecto?</span>
+                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </summary>
+                        <div class="faq-item__answer">
+                            <p>Mi proceso incluye: 1) Entender el problema y definir objetivos claros, 2) Recopilación y limpieza de datos, 3) Análisis exploratorio, 4) Desarrollo de modelos o visualizaciones, 5) Presentación de resultados con recomendaciones accionables.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__question">
+                            <span>¿Ofreces servicios de consultoría o solo proyectos?</span>
+                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </summary>
+                        <div class="faq-item__answer">
+                            <p>Ofrezco ambos. Puedo trabajar en proyectos específicos con entregables definidos, o proporcionar consultoría continua para ayudarte a establecer una cultura de datos en tu organización o equipo de carreras.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__question">
+                            <span>¿Cómo puedo empezar a trabajar contigo?</span>
+                            <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </summary>
+                        <div class="faq-item__answer">
+                            <p>¡Es muy fácil! Solo tienes que contactarme a través del formulario de abajo o enviarme un correo. Agendaremos una llamada inicial gratuita para entender tus necesidades y ver cómo puedo ayudarte.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFORMACION DE CONTACTO -->
+        <section id="contacto" class="section contact">
+            <div class="container">
+                <div class="contact__wrapper">
+                    <div class="contact__info">
+                        <span class="section__badge">Contacto</span>
+                        <h2 class="section__title">¿Listo para transformar tus datos?</h2>
+                        <p>Cuéntame sobre tu proyecto o idea. Estoy aquí para ayudarte a convertir datos en decisiones estratégicas.</p>
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 8l-9 6L3 8"/>
+                                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                </svg>
+                                <span>cantu1306@gmail.com</span>
+                            </div>
+                            <div class="contact__detail">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>Guanajuato, México</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact__form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">
+                            Enviar mensaje
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13"/>
+                                <path d="M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
-    <!-- Placeholder de sobre mi -->
-    <section id="sobre-mi" class="section">
-        <h2>Sobre mí</h2>
-        <p>Soy un entusiasta de la ciencia de datos con un profundo interés en el mundo del motorsport. Mi objetivo es combinar mis habilidades analíticas con mi pasión por las carreras para ofrecer insights valiosos y contribuir al avance del deporte.</p>
-    </section>
-    <section id="proyectos" class="section">
-        <h2>Proyectos</h2>
-        <p>Aquí encontrarás una selección de mis proyectos relacionados con la ciencia de datos y el motorsport, donde aplico técnicas avanzadas de análisis y visualización para extraer información relevante.</p>
-    </section>
-    <section id="contacto" class="section">
-        <h2>Contacto</h2>
-        <p>Espacio para contactación.</p>
-    </section>
 
-    <!-- Aquí va el footer -->
+    <!-- FOOTER -->
     <footer class="site-footer" id="terminos">
-    <section class="footer__cols">
-        <div>
-        <h3>Arturo Cantú</h3>
-        <p>Apasionado por la Ciencia de Datos y el Motorsport.</p>
-        </div>
-        <div>
-        <h4>Enlaces Rápidos</h4>
-        <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
-        </div>
-        <div>
-        <h4>Legal</h4>
-        <ul>
-            <li><a href="terminos.html">Términos y Condiciones</a></li>
-            <li><a href="privacidad.html">Política de Privacidad</a></li>
-        </ul>
-        </div>
-        <div>
-        <h4>Sigueme</h4>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/arturo-cantu-3b4b9820b/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://www.linkedin.com/in/arturo-cantu-3b4b9820b/" target="_blank" rel="noopener">GitHub</a></li>
-        </ul>
-        </div>
-    </section>
-        <small>&copy; 2025 Arturo Cantú. Todos los derechos reservados </small>
+        <section class="footer__cols">
+            <div>
+                <h3>Arturo Cantú</h3>
+                <p>Apasionado por la Ciencia de Datos y el Motorsport.</p>
+            </div>
+            <div>
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#solucion">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    <li><a href="privacidad.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Sigueme</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/arturo-cantu/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://github.com/Cantuuuu" target="_blank" rel="noopener">GitHub</a></li>
+                </ul>
+            </div>
+        </section>
+        <small>&copy; 2025 Arturo Cantú. Todos los derechos reservados</small>
     </footer>
 <!--Banner de cookies-->
     <div class="cookie-banner" id="cookieBanner">
@@ -126,3 +427,4 @@
     </body>
 
 </html>
+
