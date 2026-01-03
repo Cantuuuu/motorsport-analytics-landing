@@ -2,18 +2,18 @@
 
 ## 1) Settings → Pages (URL activa)
 - Captura que muestra la URL activa en GitHub Pages.
-- Archivo de la imagen: `imagen`
+- Archivo de la imagen: `src/img/githubPages.png`
 
-![Captura Settings → Pages](imagen)
+![Captura Settings → Pages](src/img/githubPages.png)
 
 ---
 
 ## 2) Capturas del sitio en el navegador
-- Vista principal (hero). Archivo: `capturasitio`  
-  ![Sitio - Hero](imagen)
+- Vista principal (hero). Archivo: `src/img/hero.png`  
+  ![Sitio - Hero](src/img/hero.png)
 
-- Vista de la sección de proyectos. Archivo: `imagen`  
-  ![Sitio - Proyectos](imageng)
+- Vista de la sección de proyectos. Archivo: `src/img/proyectos.png`  
+  ![Sitio - Proyectos](src/img/proyectos.png)
 
 ---
 
