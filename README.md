@@ -54,7 +54,7 @@ Límites actuales:
 - Algunas optimizaciones de performance pendientes (optimizar imágenes, lazy loading avanzado, WebP).
 - Mejora de accesibilidad a niveles avanzados (lectores de pantalla, pruebas con Lighthouse).
 
-Próximos pasos recomendados:
+Próximos pasos:
 1. Hacer el formulario funcional con un endpoint o integración (Netlify Forms, Formspree, o backend propio).
 2. Optimizar imágenes y generar múltiples tamaños / WebP para mejorar performance.
 3. Añadir CI/CD con GitHub Actions para deploy automático a GitHub Pages.
